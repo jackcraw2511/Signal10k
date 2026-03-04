@@ -6,7 +6,7 @@
     <meta name="description" content="Signal10K - Hit 10K followers with a repeatable growth system. Get a free growth audit today.">
     <meta name="theme-color" content="#1a1a1a">
     <title>Signal10K - TikTok Growth System</title>
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/signal10k-landing/styles.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -203,6 +203,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+   <script src="/signal10k-landing/script.js"></script>
 </body>
 </html>
