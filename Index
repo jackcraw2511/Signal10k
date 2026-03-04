@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signal10K - Hit 10K followers with a repeatable growth system. Get a free growth audit today.">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>Signal10K - TikTok Growth System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <h1>Signal10K</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#booking" class="nav-link nav-cta">Book Audit</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-headline">
+                    Hit 10K Followers With a Repeatable Growth System.
+                </h2>
+                <p class="hero-subheadline">
+                    Built a 40K account in 4 months. Rebuilt a new account to 3K in 10 days with a 3M view post.
+                </p>
+                <a href="#booking" class="cta-button primary">
+                    Book Free Growth Audit
+                    <span class="button-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof Section -->
+    <section class="proof" id="proof">
+        <div class="container">
+            <h3 class="section-title">Proven Results</h3>
+            <div class="proof-grid">
+                <div class="proof-card">
+                    <div class="proof-number">40K</div>
+                    <p class="proof-label">Followers in 4 Months</p>
+                    <div class="proof-image-placeholder">
+                        <span>Screenshot Placeholder</span>
+                    </div>
+                </div>
+                <div class="proof-card">
+                    <div class="proof-number">4M</div>
+                    <p class="proof-label">Account Monetized</p>
+                    <div class="proof-image-placeholder">
+                        <span>Screenshot Placeholder</span>
+                    </div>
+                </div>
+                <div class="proof-card">
+                    <div class="proof-number">3K</div>
+                    <p class="proof-label">Followers in 10 Days (New Account)</p>
+                    <div class="proof-image-placeholder">
+                        <span>Screenshot Placeholder</span>
+                    </div>
+                </div>
+                <div class="proof-card">
+                    <div class="proof-number">3M+</div>
+                    <p class="proof-label">Views on One Post (9 Days)</p>
+                    <div class="proof-image-placeholder">
+                        <span>Screenshot Placeholder</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h3 class="section-title">What You Get in Your Free Audit</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h4>Full Page Audit</h4>
+                    <p>Complete analysis of your current content, posting strategy, and audience engagement patterns.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h4>Hook & Watch-Time Breakdown</h4>
+                    <p>Detailed review of your hooks, retention curves, and how to optimize both for algorithmic reach.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h4>30-Day Growth Strategy</h4>
+                    <p>Custom framework for your niche with exact content pillars, posting frequency, and timing optimization.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h4>Monetization Roadmap</h4>
+                    <p>Actionable steps to hit 10K followers and qualify for TikTok Creator Fund requirements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚠️</div>
+                    <h4>Creator Rewards Risk Avoidance</h4>
+                    <p>Insider knowledge on compliance, demonetization risks, and how to protect your account long-term.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who This Is For Section -->
+    <section class="who-section" id="who">
+        <div class="container">
+            <h3 class="section-title">Who This Is For</h3>
+            <div class="who-grid">
+                <div class="who-card">
+                    <span class="who-icon">✓</span>
+                    <p>Creators stuck under 10K followers</p>
+                </div>
+                <div class="who-card">
+                    <span class="who-icon">✓</span>
+                    <p>Accounts getting views but no follower growth</p>
+                </div>
+                <div class="who-card">
+                    <span class="who-icon">✓</span>
+                    <p>Creators trying to qualify for monetization</p>
+                </div>
+                <div class="who-card">
+                    <span class="who-icon">✓</span>
+                    <p>Serious creators ready to implement a system</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h3 class="section-title">How It Works</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Book Free Audit</h4>
+                    <p>Select your time slot. 45 minutes, no commitment, no pitch at the end.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Get Custom Growth Breakdown</h4>
+                    <p>We analyze your account and deliver a personalized framework for your niche.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Implement 30-Day System</h4>
+                    <p>Follow the framework, track your metrics, and watch your follower count accelerate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="booking-content">
+                <h3 class="section-title">Limited Audit Spots Weekly</h3>
+                <p class="booking-subtext">Serious creators only.</p>
+                
+                <div class="calendly-placeholder">
+                    <p class="placeholder-text">
+                        Calendly embed will appear here.<br>
+                        <code>&lt;iframe src="https://calendly.com/your-url"&gt;&lt;/iframe&gt;</code>
+                    </p>
+                </div>
+
+                <div class="booking-cta">
+                    <p class="booking-note">
+                        ⏱️ <strong>Response within 24 hours.</strong> We review all applications to ensure good fit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Placeholder for Future) -->
+    <section class="testimonials" id="testimonials" style="display: none;">
+        <div class="container">
+            <h3 class="section-title">Creator Wins</h3>
+            <div class="testimonials-grid">
+                <!-- Testimonial cards to be added -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Signal10K. All rights reserved.</p>
+            <p class="footer-tagline">A system for serious creators.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
