@@ -1,0 +1,151 @@
+// ============================================
+// SMOOTH SCROLL & ACTIVE LINK HANDLING
+// ============================================
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault();
+		const target = document.querySelector(this.getAttribute('href'));
+		if (target) {
+			target.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			});
+			// Add active state to nav link
+			document.querySelectorAll('.nav-link').forEach(link => {
+				link.classList.remove('active');
+			});
+			this.classList.add('active');
+		}
+	});
+});
+
+// ============================================
+// SCROLL REVEAL ANIMATIONS
+// ============================================
+
+const observerOptions = {
+	threshold: 0.1,
+	rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('active');
+			observer.unobserve(entry.target);
+		}
+	});
+}, observerOptions);
+
+// Apply scroll reveal to elements
+document.querySelectorAll('.proof-card, .feature-card, .who-card, .step').forEach(el => {
+	el.classList.add('scroll-reveal');
+	observer.observe(el);
+});
+
+// ============================================
+// NAVBAR SCROLL EFFECT
+// ============================================
+
+let lastScrollTop = 0;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+	let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+	if (scrollTop > 100) {
+		navbar.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
+	} else {
+		navbar.style.boxShadow = 'none';
+	}
+    
+	lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
+// ============================================
+// ACTIVE NAV LINK ON SCROLL
+// ============================================
+
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link:not(.nav-cta)');
+
+window.addEventListener('scroll', () => {
+	let current = '';
+    
+	sections.forEach(section => {
+		const sectionTop = section.offsetTop;
+		const sectionHeight = section.clientHeight;
+		if (pageYOffset >= sectionTop - 200) {
+			current = section.getAttribute('id');
+		}
+	});
+    
+	navLinks.forEach(link => {
+		link.classList.remove('active');
+		if (link.getAttribute('href').slice(1) === current) {
+			link.classList.add('active');
+		}
+	});
+});
+
+// ============================================
+// ANALYTICS READY STRUCTURE
+// ============================================
+
+// Google Analytics events - ready to integrate
+function trackEvent(category, action, label) {
+	if (typeof gtag !== 'undefined') {
+		gtag('event', action, {
+			'event_category': category,
+			'event_label': label
+		});
+	}
+}
+
+// Track CTA button clicks
+document.querySelectorAll('.cta-button, .nav-cta').forEach(button => {
+	button.addEventListener('click', function() {
+		trackEvent('engagement', 'cta_click', 'booking_section');
+	});
+});
+
+// ============================================
+// PERFORMANCE OPTIMIZATION
+// ============================================
+
+// Lazy load images when ready (placeholder for real images)
+if ('IntersectionObserver' in window) {
+	const imageObserver = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				const img = entry.target;
+				img.src = img.dataset.src;
+				img.classList.remove('lazy');
+				imageObserver.unobserve(img);
+			}
+		});
+	});
+    
+	document.querySelectorAll('img.lazy').forEach(img => {
+		imageObserver.observe(img);
+	});
+}
+
+// ============================================
+// UTILITY FUNCTIONS
+// ============================================
+
+// Smooth scroll polyfill for older browsers
+if (!('scrollBehavior' in document.documentElement.style)) {
+	const scrollPolyfill = () => {
+		const t = Date.now();
+		const n = (t - window.scrollStart) / 1000;
+		n >= 1 ? window.scrollTo(0, window.scrollEnd) : (window.scrollTo(0, window.scrollStart + (window.scrollEnd - window.scrollStart) * n), requestAnimationFrame(scrollPolyfill));
+	};
+	window.scrollTo = function(x, y) {
+		window.scrollStart = window.scrollY;
+		window.scrollEnd = y;
+		requestAnimationFrame(scrollPolyfill);
+	};
+}
